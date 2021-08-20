@@ -1,0 +1,27 @@
+{
+  "name": "BookingNotification",
+  "type": "record",
+  "namespace": "com.test.cucumber.avro",
+  "fields": [
+    {
+      "name": "BookingNotificationKvPair",
+      "type": {
+        "type": "array",
+        "items": {
+          "name": "RefInfo",
+          "type": "record",
+          "fields": [
+            {
+              "name": "RefType",
+              "type": "string"
+            },
+            {
+              "name": "RefId",
+              "type": "string"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
